@@ -43,8 +43,9 @@
 - Diferenciação: diferente de alguns outros serviços de mensagens, o Azure Service Bus é uma oferta PaaS (Platform as a Service), o que significa que a Microsoft é responsável por lidar com falhas de hardware, atualizações do sistema, registo, cópias de segurança e failover, aliviando essa carga operacional dos utilizadores.
 
 ### Solução de demonstração do uso desses 2 recursos:
-- 
-
+- Function uue gera boletos
+- Function que valida boletos
+- Fila no Service Bus para integração
 
 
 
