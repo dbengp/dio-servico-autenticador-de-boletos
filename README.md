@@ -42,7 +42,7 @@
   * Está em conformidade com padrões como AMQP 1.0 e JMS.
 - Diferenciação: diferente de alguns outros serviços de mensagens, o Azure Service Bus é uma oferta PaaS (Platform as a Service), o que significa que a Microsoft é responsável por lidar com falhas de hardware, atualizações do sistema, registo, cópias de segurança e failover, aliviando essa carga operacional dos utilizadores.
 
-### Solução de demonstração do uso desses 2 recrusos:
+### Solução de demonstração do uso desses 2 recursos:
 - 
 
 
