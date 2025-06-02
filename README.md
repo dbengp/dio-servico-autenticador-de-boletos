@@ -42,10 +42,17 @@
   * Está em conformidade com padrões como AMQP 1.0 e JMS.
 - Diferenciação: diferente de alguns outros serviços de mensagens, o Azure Service Bus é uma oferta PaaS (Platform as a Service), o que significa que a Microsoft é responsável por lidar com falhas de hardware, atualizações do sistema, registo, cópias de segurança e failover, aliviando essa carga operacional dos utilizadores.
 
-### Solução de demonstração do uso desses 2 recursos:
-- Function que gera boletos
-- Function que valida boletos
-- Fila no Service Bus para integração
+### Solução de demonstração do uso desses dois recursos: Cenário de uma arquitetura serveless com 2 functions (uma que gera boleto e outra que valida) e tendo com canal de integração filas no servicebus. Para tanto faço uso de alguns conceitos.
+- Boleto como meio de pagamento: os boletos são amplamente utilizados para pagamentos de contas de consumo (água, luz, telefone), mensalidades, compras online, faturas de serviços, etc. O código de barras presente no boleto é uma representação visual das informações contidas na linha digitável. Ele é composto por uma sequência de barras escuras e claras de diferentes larguras, que seguem um padrão específico (no caso do Brasil, geralmente o padrão Intercalado 2 de 5 - ITF-2/5 para boletos bancários).
+- O mecanismo de leitura funciona da seguinte forma:
+  * Emissão de luz: Um leitor de código de barras (seja um scanner em um caixa, um leitor de celular ou um aplicativo de banco) emite um feixe de luz (geralmente laser ou LED) sobre o código.
+  * Reflexão e absorção: As barras escuras absorvem a luz, enquanto as barras claras a refletem.
+  * Conversão em sinal elétrico: A luz refletida é captada por um sensor no leitor. O sensor converte essa variação de luz em um sinal elétrico. As barras escuras geram um sinal de baixa intensidade e as claras, um sinal de alta intensidade.
+  * Decodificação: O leitor possui um decodificador que interpreta esses sinais elétricos. Ele identifica o padrão de larguras das barras e espaços, convertendo-os em dados numéricos ou alfanuméricos.
+  * Transmissão dos dados: Os dados decodificados são transmitidos para o sistema onde o pagamento está sendo processado (por exemplo, o sistema do banco ou da loja), que então utiliza essas informações para identificar o boleto e realizar a operação.
+  * O Sistema que foi feito é para demonstração, para projetos mais consistentes consulte <https://portal.febraban.org.br/FebrabanTech>.
+
+
 
 
 
