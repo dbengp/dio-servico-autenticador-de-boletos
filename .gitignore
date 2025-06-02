@@ -1,0 +1,69 @@
+# Arquivos de Build e Binários
+[Bb]in/
+[Oo]bj/
+*.dll
+*.exe
+*.pdb
+*.tmp
+*.user
+*.suo
+*.vspscc
+*.vssscc
+*.bak
+*.sqlite
+*.log
+*.zip
+*.nupkg
+*.cache
+*.designer.cs.dll
+*.Designer.cs.orig
+*.generated.cs
+*.resources
+
+# Pasta de Pacotes NuGet
+packages/
+
+# Arquivos de configurações locais e variáveis de ambiente
+local.settings.json        # Contém segredos e configurações locais
+.vs/                       # Pasta de cache do Visual Studio
+.vscode/                   # Cache e configurações de usuário do VS Code
+.devcontainer/
+.DS_Store                  # Arquivo do macOS
+Thumbs.db                  # Arquivo do Windows
+*.dbmd
+*.dbproj.user
+*.jfm
+*.licx
+*.user
+*.xml.user
+*.resharper
+*.dotSettings
+*.pidb
+*.booproj
+*.webinfo
+*.pubxml
+*.publishproj
+
+# Resultados de Testes
+TestResults/
+*.trx
+
+# Ferramentas de CI/CD
+.azure/
+.azure-pipelines/
+
+# Arquivos de logs de Azure Functions
+.funcignore                # Arquivo específico de ignore do Azure Functions Core Tools
+logs/
+.Triggers/
+
+# Arquivos de rastreamento (telemetria)
+ApplicationInsights.config
+
+# Diversos
+*.orig
+*.swp
+*.swo
+*~
+.#*
+*.pid
